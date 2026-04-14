@@ -21,24 +21,26 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="cr1-button">Character #1</button>
+    <button id="cr2-button">Character #2</button>
+    <button id="cr3-button">Character #3</button>
+    <h1>My Top Three Favorite Characters<span> For Right Now</span></h1>
+    <h2>(This list isn't ranked because I can't decide between them)</h2>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="cr1">Gumball - The Amazing World of Gumball</h3>
+        <p>Gumball is one of my all time favorite characters because I've been obsessed since childhood. He never fails to make me laugh and I just love his energy so much. Gumball is extremely spontaneous and kept me on my toes. He aspired me to always live life to the fullest!</p>
+        <img src="https://static.wikia.nocookie.net/cartoons/images/e/eb/Gumball.jpg/revision/latest/scale-to-width-down/1200?cb=20250205193614">
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="cr2">Naruto - Naruto/Naruto: Shippuden</h3>
+        <p>(this may be really cliche but) Naruto is such a complex and interesting character. I love him for always sticking to his ideals and following his "Ninja Way". He would remind me about staying true to my values and character, and you can do anything you want. He is so sweet and I empathize with him so much. I could watch him accomplish his dreams all day.</p>
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="cr3">Memory #3</h3>
+        <p> </p>
       </li>
     </ol>
 
@@ -46,19 +48,21 @@ Select ONE Additional
     <script>
 
       // ======================== Button #1
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      $("#cr1-button").click(function () {
+        $("#cr1").css("color", "purple");
+        $("img").attr(
+          "src", "https://static.wikia.nocookie.net/cartoons/images/e/eb/Gumball.jpg/revision/latest/scale-to-width-down/1200?cb=20250205193614");
       });
 
       // ======================== Button #2
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+      $("#cr2-button").click(function () {
+        $("#cr2").css("color", "blue");
       });
 
       // ======================== Button #3
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+      $("#cr3-button").click(function () {
+        $("#cr3").css("color", "green");
+        $("#cr3").text("Coding Parties! 🎉");
       });
 
 
