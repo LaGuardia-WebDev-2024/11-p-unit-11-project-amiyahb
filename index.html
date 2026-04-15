@@ -28,42 +28,63 @@ Select ONE Additional
     <h2>(This list isn't ranked because I can't decide between them)</h2>
     <ol>
       <li>
-        <h3 id="cr1">Gumball - The Amazing World of Gumball</h3>
-        <p>Gumball is one of my all time favorite characters because I've been obsessed since childhood. He never fails to make me laugh and I just love his energy so much. Gumball is extremely spontaneous and kept me on my toes. He aspired me to always live life to the fullest!</p>
-        <img src="https://static.wikia.nocookie.net/cartoons/images/e/eb/Gumball.jpg/revision/latest/scale-to-width-down/1200?cb=20250205193614">
+        <h3 id="cr1">Character #1</h3>
+        <p id="text1">Gumball is one of my all time favorite characters because I've been obsessed since childhood. He never fails to make me laugh and I just love his energy so much. Gumball is extremely spontaneous and kept me on my toes. He aspired me to always live life to the fullest!</p>
+        <img class="gumball" src="https://static.wikia.nocookie.net/cartoons/images/e/eb/Gumball.jpg/revision/latest/scale-to-width-down/1200?cb=20250205193614" width="300">
+        <img class="gumball" src="https://static.wikia.nocookie.net/theamazingworldofgumball/images/a/a5/%E2%96%B2BABYGUMBALLXDDDDDDDDDDDDDDDDDDDDDDD%E2%96%B2.png/revision/latest/scale-to-width-down/1200?cb=20160601041315" width="300">
+        <img class="gumball" src="https://youtooz.com/cdn/shop/files/6c5u5l5c5h.png?v=1766003656" width="300">
       </li>
 
       <li>
-        <h3 id="cr2">Naruto - Naruto/Naruto: Shippuden</h3>
-        <p>(this may be really cliche but) Naruto is such a complex and interesting character. I love him for always sticking to his ideals and following his "Ninja Way". He would remind me about staying true to my values and character, and you can do anything you want. He is so sweet and I empathize with him so much. I could watch him accomplish his dreams all day.</p>
+        <h3 id="cr2">Character #2</h3>
+        <p id="text2">(this may be really cliche but) Naruto is such a complex and interesting character. I love him for always sticking to his ideals and following his "Ninja Way". He would remind me about staying true to my values and character, and you can do anything you want. He is so sweet and I empathize with him so much. I could watch him accomplish his dreams all day.</p>
+        <img class="naruto" src="https://blubbyweb.com/wp-content/uploads/2019/02/naruto-thumbs-up.jpg" width="300">
+        <img class="naruto" src="https://media.gq.com.mx/photos/65da1f0ddfb76fb7cdbdfd51/1:1/w_1682,h_1682,c_limit/naruto.jpg" width="300">
+        <img class="naruto" src="https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest/scale-to-width-down/985?cb=20150124180545" width="300">
       </li>
 
       <li>
-        <h3 id="cr3">Memory #3</h3>
-        <p> </p>
+        <h3 id="cr3">Character #3</h3>
+        <p id="text3">Killua is the most cutest character of all time. I love him in hte show and how good of a friend he is to Gon, his best friend. He also just has <strong>infinite aura</strong>. I could watch him all day to be honest. He also has such complex feelings and emotions which I adore. I learned from him that its ok to be vulnerable and show emotion. I will forever love him. </p>
+        <img class="killua" src="https://images.squarespace-cdn.com/content/v1/600c783087812b75eb0a1732/1629078625006-MPF05SBCWKYJHYGH8DZE/Killua+Zoldyck.jpg" width="300">
+        <img class="killua" src="https://i.pinimg.com/736x/3e/6c/0d/3e6c0dbd7e2c149ff4b0596b9b23f56a.jpg" width="300">
+        <img class="killua" src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/2021/02/killua-wink.jpg?q=50&fit=crop&w=825&dpr=1.5" width="300">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $(".gumball").hide();
+      $("#text1").hide()
       // ======================== Button #1
       $("#cr1-button").click(function () {
         $("#cr1").css("color", "purple");
-        $("img").attr(
-          "src", "https://static.wikia.nocookie.net/cartoons/images/e/eb/Gumball.jpg/revision/latest/scale-to-width-down/1200?cb=20250205193614");
+        $("#text1").show()
+        $("#cr1").text("Gumball - The Amazing World of Gumball");
+        $(".gumball").show()
       });
 
+      $(".naruto").hide();
+      $("#text2").hide();
       // ======================== Button #2
       $("#cr2-button").click(function () {
         $("#cr2").css("color", "blue");
+        $("#text2").show()
+        $("#cr2").text("Naruto - Naruto/Naruto: Shippuden");
+        $(".naruto").show()
       });
 
+        $(".killua").hide();
+        $("#text3").hide();
       // ======================== Button #3
       $("#cr3-button").click(function () {
         $("#cr3").css("color", "green");
-        $("#cr3").text("Coding Parties! 🎉");
+        $("#text3").show();
+        $("#cr3").text("Killua - Hunter x Hunter");
+        $(".killua").show()
       });
+
 
 
     </script>
