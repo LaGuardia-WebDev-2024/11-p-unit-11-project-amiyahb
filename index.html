@@ -1,9 +1,9 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
 [  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .hide() & .show() method
@@ -30,9 +30,13 @@ Select ONE Additional
       <li>
         <h3 id="cr1">Character #1</h3>
         <p id="text1">Gumball is one of my all time favorite characters because I've been obsessed since childhood. He never fails to make me laugh and I just love his energy so much. Gumball is extremely spontaneous and kept me on my toes. He aspired me to always live life to the fullest!</p>
+       
+       <div class="pics">
         <img class="gumball" src="https://static.wikia.nocookie.net/cartoons/images/e/eb/Gumball.jpg/revision/latest/scale-to-width-down/1200?cb=20250205193614" width="300">
         <img class="gumball" src="https://static.wikia.nocookie.net/theamazingworldofgumball/images/a/a5/%E2%96%B2BABYGUMBALLXDDDDDDDDDDDDDDDDDDDDDDD%E2%96%B2.png/revision/latest/scale-to-width-down/1200?cb=20160601041315" width="300">
         <img class="gumball" src="https://youtooz.com/cdn/shop/files/6c5u5l5c5h.png?v=1766003656" width="300">
+      </div>
+      
       </li>
 
       <li>
@@ -54,35 +58,39 @@ Select ONE Additional
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      
 
       $(".gumball").hide();
       $("#text1").hide()
       // ======================== Button #1
       $("#cr1-button").click(function () {
-        $("#cr1").css("color", "purple");
-        $("#text1").show()
-        $("#cr1").text("Gumball - The Amazing World of Gumball");
-        $(".gumball").show()
+        $("#cr1").css("color", "blue");
+        $("#text1").hide().fadeIn(2000);
+        $("#cr1").hide().text("Gumball - The Amazing World of Gumball").fadeIn(2000);
+        $(".gumball").hide().fadeIn(2000);
+        $("html").css("background-color", "teal")
       });
 
       $(".naruto").hide();
       $("#text2").hide();
       // ======================== Button #2
       $("#cr2-button").click(function () {
-        $("#cr2").css("color", "blue");
-        $("#text2").show()
-        $("#cr2").text("Naruto - Naruto/Naruto: Shippuden");
-        $(".naruto").show()
+        $("#cr2").css("color", "yellow");
+        $("#text2").hide().slideDown()
+        $("#cr2").hide().text("Naruto - Naruto/Naruto: Shippuden").slideDown();
+        $(".naruto").hide().slideDown()
+        $("html").css("background-color", "orange")
       });
 
         $(".killua").hide();
         $("#text3").hide();
       // ======================== Button #3
       $("#cr3-button").click(function () {
-        $("#cr3").css("color", "green");
-        $("#text3").show();
-        $("#cr3").text("Killua - Hunter x Hunter");
-        $(".killua").show()
+        $("#cr3").css("color", "gray");
+        $("#text3").hide().fadeIn(2000);
+        $("#cr3").hide().fadeIn(2000).text("Killua - Hunter x Hunter");
+        $(".killua").hide().fadeIn(2000)
+        $("html").css("background-color", "azure")
       });
 
 
